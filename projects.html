@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Portfolio:Yash Rai/Projects</title>
+    <style>
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+           z-index: -1;
+        }
+        header {
+            margin-top: 30px;
+        }
+        body{
+            color:azure;
+            margin-top: 100px;
+        }
+    .containers{
+        display: inline-block;
+        height: auto;
+        width: auto;
+        border: 2px solid white;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-right: 50px;
+        /* gap: 20px; */
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .container1,.container2{
+        height: 250px;
+        width: 300px;
+        column-gap: 20px;
+        row-gap: 20px;
+        display: block;
+        border: 2px solid azure;
+
+    }
+    #coming{
+        /* font-size: 50px; */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 6%;
+    }
+    h2{
+        position: relative;
+        font-size: 8vw;
+        color:transparent;
+        -webkit-text-stroke: transparent;
+        text-transform: uppercase;
+    }
+    h2::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: whitesmoke;
+        -webkit-text-stroke: 0vw black;
+        border-right: 2px solid whitesmoke;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    }
+    @keyframes animate{
+        0%,10%,100%{
+            width: 0%;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+    #para-01{
+        justify-content: right;
+        display: flex;
+        margin-right: 2%;
+        font-size: 25px;
+    }
+    ul{
+        background: rgba(14, 14, 14, 0.5); /* Background color with 50% opacity */
+    backdrop-filter: blur(5px);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+       li{
+        display: inline;
+        float: left;
+        font-size: 15px;
+        padding: 18px 10px;
+    }
+    a{
+       /* background-color: darkslategrey;*/
+        text-decoration: none;
+        padding: 10px 10px;
+        color: azure;
+    }  
+    li:hover{
+        background-color: black;
+        font-size: 15px;
+        border-radius: 50%;
+    }
+    a:hover{
+        background-color: black;
+        color: whitesmoke;
+        font-size: 15px;
+        border-radius: 50%;
+    }
+    #name{
+        color: azure;
+        font-size: 20px;
+        padding-right: 15px;
+        padding-top: 15px;
+        align-items: center;
+        float: right;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #iam{
+        color: azure;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            font-size: 30px;
+            transform: translate(-50%, -50%);
+    }
+    #pict{
+            display: inline;
+        float: right;
+        padding: 8px 5px;
+        height: 20px;
+        width: 20px;
+        }
+        #pic{
+            display: inline;
+        float: right;
+        padding: 8px 0.1px;
+        }
+        .navbar{
+            margin-top: -90px;
+        }
+    </style>
+        <div class="navbar">
+            <ul>
+                <li><a href="projectminor.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Back</a></li>
+                <li id="name">Yash Rai</li>
+                <li  id="pic"><img id="pict" src="mylogo.png" alt="Yash Rai"></a></li>
+            </ul>
+        </div>
+      <header>
+        <marquee behavior="float" direction="left" scrollamount="10">Welcome to Projects page. Here you can find-out projects developed by me as well their source code in git-hub repo </marquee>
+    </header>
+
+    <body>
+        <!-- <div class="containers">
+            <div class="container1">
+                Project-01
+            </div>
+            <div class="container2">
+                Project-02
+            </div>
+        </div> -->
+        <div id="coming"><h2 data-text="UPCOMING..."> UPCOMING...</h2>
+        </div>
+            <p id="para-01">
+                More to Come<br> Stay tuned with us.....
+            </p>
+        <video id="video-background" autoplay muted loop src="bg3.mp4" type="video/mp4"></video>
+        </body>
+    </html>

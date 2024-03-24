@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<title>Portfolio:Yash Rai/Sign-Up</title>
+</head>
+<style>body {position: relative;
+    background-color:#f2f2f2;
+         display:flex;
+         color:white;
+         background-repeat: no-repeat;
+         background-size: cover;
+         justify-content: center;
+         align-items: center;
+         min-height:100vh;
+ }
+     ::selection {color:#ececec;
+         background-color: #302f49;
+     }
+     #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+           z-index: -1;
+        }
+     .form{
+         position: relative;
+         background-color: transparent 50%;
+         width: 100%;
+         max-width: 500px;
+         border-radius: 25px ;
+         border: 2px solid ;
+         font-size: 100%;
+         box-shadow: -3px 3px 10px -5px rgba(9, 6, 6, 0.2);
+         /* backdrop-filter: blur(5px); */
+         padding: 30px 30px;
+     }
+     .form h2{
+         font-size: 30px;
+         font-weight: 700;
+         
+     }
+     .form p{
+         font-size: 14px;
+         padding-bottom: 8px;
+     
+     
+     }
+      </style>
+      <body>
+    <div class="form">
+        <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" >Sign up</h2>
+        <form action="login.html" onsubmit="show()" on>           
+            <div class="grid-details">
+            </div>
+                <div class="input">
+                    <div class="name">
+                    <lable>Name<br></lable>
+                    <input tyoe="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'-\s]*">
+                </div>
+                <div class="input">
+                        <lable>Email<br> </lable>
+                        <input type="email" name="email" placeholder="Enter your mail address" required>  
+                        <div class="input">
+                            <lable>Phone number<br></lable>
+                            <input type="phone" name="phone" placeholder="Enter your phone number" 
+                            required pattern="[0-9]{10}" oninvalid="this.setcustomvalidity('Enter 11 digits Number')"  oninput="this.setCustomValidity('')">          
+                        </div>
+                            <div class="grid_details"> 
+                            <div class="input">
+                                <lable>Password<br></lable>
+                                <input tyoe="text" name="pass" placeholder="Password" required pattern="[a-zA-Z'-\s]*">
+                            <i class="fa fa-lock lock">
+                                
+                            </i>
+                            </div>
+                            <div class="input"> 
+                                <lable>Confrim Password<br></lable>
+                                <input type="text" name="cpass" placeholder="Confrim Password" 
+                                required pattern="[a-zA-Z'-\s]*">
+            </div>
+            </div>
+            <div class="input-name">
+                <input type="checkbox" id="cb" class="check-button">
+                <lable for="cb" class="check" required>I accept the terms and conditions</lable>
+            </div>            <div class="submit">
+                <input type="submit" value="Signup Now" class="button">
+            </div>
+            <div class="link">Already Registered? <a href="login.html" >Login Now</a></div>
+        </form>
+    </div>
+    <video id="video-background" autoplay muted loop src="bg3.mp4" type="video/mp4"></video>
+    <script>
+        function show(){
+            let a=confirm("Do you want to continue?");
+        }
+    </script>
+</body>
+</html>

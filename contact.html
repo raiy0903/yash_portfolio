@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio:Yash Rai/Contact</title>
+    <style>
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+           z-index: -1;
+        }
+        body{
+        color: azure;
+        background-color:#f2f2f2;
+         display:flex;
+         color:white;
+         background-repeat: no-repeat;
+         background-size: cover;
+         justify-content: center;
+         align-items: center;
+         min-height:100vh;
+    }
+        .form{
+            position: relative;
+         background-color: transparent 50%;
+         width: 100%;
+         max-width: 500px;
+         border-radius: 20px ;
+         border: 2px solid whitesmoke;
+         font-size: 100%;
+         font-size: 25px;
+         box-shadow: -3px 3px 10px -5px rgba(9, 6, 6, 0.2);
+         padding: 30px 30px;
+         background: rgba(14, 14, 14, 0.5); /* Background color with 50% opacity */
+    backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Contact</h2>
+        <form action="projectminor.html" onsubmit="showPopup()" method="get">
+            <div class="input">
+                <label>Name<br></label>
+                <input type="text" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="input">
+                <label>Email<br></label>
+                <input type="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="input">
+                <label>Phone number<br></label>
+                <input type="text" name="phone" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="input">
+                <label>Message<br></label>
+                <textarea name="message" placeholder="Type Message" required cols="65" rows="7"></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Send Message" class="button">
+            </div>
+            <div class="back">
+                <!-- <input type="button" value="← Back" class="button" onclick="console.log('Button clicked!'); redirectToProjectMinor();"> -->
+<input type="button" value="← Back" class="button" onclick="redirectToindex()">
+            </div>
+        </form>
+    </div>
+    <video id="video-background" autoplay muted loop src="bg3.mp4" type="video/mp4"></video>
+    <script>
+        function showPopup(){
+            alert("Thank you for contacting us!");
+        }
+        function redirectToindex() {
+        window.location.href = "index.html";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio:Yash Rai/About</title>
+</head>
+    <style>
+        h1{
+        color: azure;
+        font-family: 'Lucida Sans';
+
+    }
+    ul{
+        background: rgba(14, 14, 14, 0.5); /* Background color with 50% opacity */
+    backdrop-filter: blur(5px);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+       li{
+        display: inline;
+        float: left;
+        font-size: 15px;
+        padding: 18px 10px;
+    }
+    a{
+       /* background-color: darkslategrey;*/
+        text-decoration: none;
+        padding: 10px 10px;
+        color: azure;
+    }  
+    li:hover{
+        background-color: black;
+        font-size: 15px;
+        border-radius: 50%;
+    }
+    a:hover{
+        background-color: black;
+        color: whitesmoke;
+        font-size: 15px;
+        border-radius: 50%;
+    }
+    #name{
+        color: azure;
+        font-size: 20px;
+        padding-right: 15px;
+        padding-top: 15px;
+        align-items: center;
+        float: right;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #iam{
+        color: azure;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            font-size: 30px;
+            transform: translate(-50%, -50%);
+    }
+    #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+           z-index: -1;
+        }
+        #pict{
+            display: inline;
+        float: right;
+        padding: 8px 5px;
+        height: 20px;
+        width: 20px;
+        }
+        #pic{
+            display: inline;
+        float: right;
+        padding: 8px 0.1px;
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+           z-index: -1;
+        }
+        a:active{
+            color: red;
+        }
+        .detail{
+            color: azure;
+            padding: 50px 50px 30px 30px;
+        }
+        img{
+            float: right;
+            height: 200px;
+            width: 200px;
+        }
+        img:hover{
+            height: 300px;
+            width: 300px;
+            transition-duration: 2s;
+        }
+     /*  #skill{
+        padding-left: 200px;
+       }
+       #lang{
+        padding-left: 200px;
+       }
+       #edu{
+        padding-left: 200px;
+       }
+       #hob{
+        padding-left: 200px;
+       }*/
+       #yash{
+        font-size: 30px;
+       }
+       @media(max-width=800px){
+        img{
+            height: auto;
+            width: auto;
+        }
+        #pict{
+            height: auto;
+            width: auto;
+        }
+       }
+       #footer{
+        color: azure;
+        margin-top: -2%;
+        font-size: 20px;
+        float: right;
+       }
+    </style>
+<body>
+        <video id="video-background" autoplay muted loop src="bg1.mp4" type="video/mp4"></video>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="RESUME_YASH.pdf" download="">Download Resume</a></li>
+                <li id="name">Yash Rai</li>
+                <li  id="pic"><img id="pict" src="mylogo.png" alt="Yash Rai"></a></li>
+            </ul>
+        </div>
+        <div class="detail">
+            <h3 id="yash">Name : Yash Rai</h3>
+            <h4>I'm a 21-year-old pursuing B.Tech in Computer Science and Engineering from Amity University Gwalior, Madhya Pradesh, is an enthusiastic learner and explorer. With a passion for discovering new things, I possesses a curious mind that constantly seeks knowledge. Motivated and determined, i embraces challenges and embraces opportunities to grow and expand my horizons. Yash's dedication and open-mindedness make me an ideal candidate for embracing and adapting to the ever-evolving world of technology.</h4>
+            <img src="me3.jpg" alt="Yash Rai">
+            <h3>Phone Number:<br>⁕ 7389046833<br></h3>
+            <h3>Address: <br>⁕ Shivalya, Near Tata Indicom Tower, Pathak Ward,
+                Bina-4701113</h3>
+                   <h3>E-Mail:<br>⁕ yashrai373@gmail.com</h3>
+                   <h3 id="edu">Education:<br>⁕ 10th, Oxford Public School, Bina[70%]<br>⁕ 12th, Oxford Public School, Bina [69.80%]<br>
+                    ⁕ Currently pursuing B.Tech.(CSE) from Amity University, Gwalior, Madhya Pradesh [CGPA-7.54]</h3>
+                <h3 id="skill">Skill:<br>
+                ⁕ C/C++ ****<br>
+                ⁕ Python ****<br>
+                ⁕ Database and Management System ***<br>
+                ⁕ Java Programming ****<br>
+                ⁕ Artificial Intellegence and Machine Larning ****<br>
+                ⁕ Operating System ***<br>
+                ⁕ Data Structure and Algorithms ****<br>
+                ⁕ HTML&CSS ****
+                </h3>
+                <h3 id="lang">Languages:<br>
+                    ⁕ Hindi *****<br>
+                    ⁕ English ****<br>
+                    ⁕ French ***</h3>
+                    <h3 id="hob">Hobbies:<br>
+                        ⁕ Coding<br>⁕ Painting<br> ⁕ Cooking<br> ⁕ Travelling <br>⁕ Writting</h3>
+        </div>
+        <p id="footer">For more details, download resume</p>
+</body>
+</html>

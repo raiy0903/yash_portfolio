@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio|Login Page</title>
+  </head>
+  <style>
+    body{
+        color: azure;
+        background-color:#f2f2f2;
+         display:flex;
+         color:white;
+         background-repeat: no-repeat;
+         background-size: cover;
+         justify-content: center;
+         align-items: center;
+         min-height:100vh;
+    }
+#t_color {
+ color: darkblue;   
+}
+#t_style{
+    font-family: arial;
+    font-size: 20px;
+}
+.t_class{
+    color: red; 
+}
+.t_class2{
+    font-family: arial;
+    font-size: 20px; 
+}
+#video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+           z-index: -1;
+        }
+        .form{
+            position: relative;
+         background-color: transparent 50%;
+         width: 100%;
+         max-width: 500px;
+         border-radius: 25px ;
+         border: 2px solid ;
+         font-size: 100%;
+         font-size: 25px;
+         box-shadow: -3px 3px 10px -5px rgba(9, 6, 6, 0.2);
+         padding: 30px 30px;
+        }
+        .button-container{
+            background-color: azure;
+            width: 70px;
+            border-radius: 15%;
+            justify-content: center;
+            align-items:center ;
+            color: black;
+        }
+    
+  </style>
+  <body>
+    <video id="video-background" autoplay muted loop src="bg3.mp4" type="video/mp4"></video>
+    <div class="form">
+        <h3>Login</h3>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <div class="button-container"><a href="projectminor.html" onclick="myobj()">Login</a></div>
+    </form>
+    </div>
+    <script>
+      let myobj={
+        Username:"Yash0099",
+        Password:"Yash@123"
+
+      }
+      console.log(myobj);
+    </script>
+  </body>
+</html>
